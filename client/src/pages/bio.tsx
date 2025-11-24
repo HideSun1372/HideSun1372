@@ -28,12 +28,17 @@ export default function Bio() {
     },
     {
       name: "Checks",
-      description: "Allows you to check random items, such as dogs."
+      description: "Allows you to check random items, such as dogs.",
+      hasCheckLink: true
     }
   ];
 
   const handleWeatherClick = () => {
     window.open('https://deltarune.com/weather', '_blank');
+  };
+
+  const handleDogCheckClick = () => {
+    window.open('https://deltarune.com/dogcheck', '_blank');
   };
 
   return (
@@ -115,6 +120,26 @@ export default function Bio() {
                         weather
                       </span>
                       {' '}using a free API, made it look cool with gradients
+                    </>
+                  ) : project.hasCheckLink ? (
+                    <>
+                      Allows you to{' '}
+                      <span 
+                        onClick={handleDogCheckClick}
+                        className="cursor-pointer hover:text-foreground transition-colors"
+                        data-testid="link-check"
+                      >
+                        check
+                      </span>
+                      {' '}random items, such as{' '}
+                      <span 
+                        onClick={handleDogCheckClick}
+                        className="cursor-pointer hover:text-foreground transition-colors"
+                        data-testid="link-dogs"
+                      >
+                        dogs
+                      </span>
+                      .
                     </>
                   ) : (
                     project.description
