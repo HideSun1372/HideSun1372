@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import gifImage from "@assets/egbnebde4z5f1_1764012886964.gif";
 import projectGif from "@assets/ch3-spoiler-i-ripped-all-of-this-guys-sprites-and-made-some-v0-olxlbovsfb5f1_1764012956214.gif";
-import contactImage from "@assets/360_1764013009804.jpg";
+import contactImage from "@assets/sr282921ade2c21_1764013298276.png";
 
 export default function Bio() {
   const projects = [
