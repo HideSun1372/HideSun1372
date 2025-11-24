@@ -47,8 +47,12 @@ export default function Home() {
     { top: '88%', left: '38%' },
   ];
 
-  const handleSecretClick = () => {
+  const handleRombClick = () => {
     window.open('https://deltarune.com/romb', '_blank');
+  };
+
+  const handleDessClick = () => {
+    window.open('https://deltarune.com/dess', '_blank');
   };
 
   return (
@@ -56,12 +60,12 @@ export default function Home() {
       {scatteredPositions.map((pos, index) => (
         <div
           key={index}
-          className={`absolute text-[20px] font-normal tracking-[-0.01em] leading-none text-muted-foreground/40 ${index === 14 ? 'cursor-pointer hover:text-foreground transition-colors' : ''}`}
+          className={`absolute text-[20px] font-normal tracking-[-0.01em] leading-none text-muted-foreground/40 ${(index === 14 || index === 20) ? 'cursor-pointer hover:text-foreground transition-colors' : ''}`}
           style={{ 
             ...pos,
             WebkitFontSmoothing: 'antialiased'
           }}
-          onClick={index === 14 ? handleSecretClick : undefined}
+          onClick={index === 14 ? handleRombClick : index === 20 ? handleDessClick : undefined}
           data-testid={`text-scattered-${index}`}
         >
           hi
