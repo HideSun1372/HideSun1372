@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import gifImage from "@assets/egbnebde4z5f1_1764012886964.gif";
 import projectGif from "@assets/ch3-spoiler-i-ripped-all-of-this-guys-sprites-and-made-some-v0-olxlbovsfb5f1_1764012956214.gif";
+import contactImage from "@assets/360_1764013009804.jpg";
 
 export default function Bio() {
   const projects = [
@@ -89,13 +90,21 @@ export default function Bio() {
         </div>
 
         <div className="mb-12">
-          <h2 
-            className="text-[20px] font-normal tracking-[-0.01em] leading-none mb-6"
-            data-testid="text-contact-heading"
-            style={{ WebkitFontSmoothing: 'antialiased' }}
-          >
-            Contact Me
-          </h2>
+          <div className="flex items-center gap-6 mb-6">
+            <h2 
+              className="text-[20px] font-normal tracking-[-0.01em] leading-none"
+              data-testid="text-contact-heading"
+              style={{ WebkitFontSmoothing: 'antialiased' }}
+            >
+              Contact Me
+            </h2>
+            <img 
+              src={contactImage} 
+              alt="contact image" 
+              className="w-16 h-16 object-contain"
+              data-testid="img-contact"
+            />
+          </div>
           <div className="space-y-3">
             <p 
               className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
