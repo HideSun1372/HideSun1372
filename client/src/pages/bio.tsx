@@ -70,6 +70,39 @@ export default function Bio() {
           </div>
         </div>
 
+        <div className="mb-12">
+          <h2 
+            className="text-[20px] font-normal tracking-[-0.01em] leading-none mb-6"
+            data-testid="text-contact-heading"
+            style={{ WebkitFontSmoothing: 'antialiased' }}
+          >
+            Contact Me
+          </h2>
+          <div className="space-y-3">
+            <p 
+              className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
+              data-testid="text-email"
+              style={{ WebkitFontSmoothing: 'antialiased' }}
+            >
+              Email: justin.chen@example.com
+            </p>
+            <p 
+              className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
+              data-testid="text-github"
+              style={{ WebkitFontSmoothing: 'antialiased' }}
+            >
+              GitHub: github.com/justinchen
+            </p>
+            <p 
+              className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
+              data-testid="text-discord"
+              style={{ WebkitFontSmoothing: 'antialiased' }}
+            >
+              Discord: justin#1234
+            </p>
+          </div>
+        </div>
+
         <Link href="/">
           <a 
             className="text-[20px] font-normal tracking-[-0.01em] leading-none text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
