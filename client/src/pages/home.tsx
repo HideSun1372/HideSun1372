@@ -74,9 +74,10 @@ export default function Home() {
       
       <div className="flex items-center justify-center h-full">
         <h1 
-          className="text-[20px] font-normal tracking-[-0.01em] leading-none" 
+          className="text-[20px] font-normal tracking-[-0.01em] leading-none cursor-pointer hover:text-foreground transition-colors" 
           data-testid="text-greeting"
           style={{ WebkitFontSmoothing: 'antialiased' }}
+          onClick={() => window.location.href = '/bio'}
         >
           hi
         </h1>
