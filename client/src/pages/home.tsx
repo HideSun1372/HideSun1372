@@ -33,6 +33,12 @@ export default function Home() {
     { top: '63%', left: '22%' },
     { top: '59%', left: '38%' },
     { top: '61%', left: '15%' },
+    { top: '88%', left: '55%' },
+    { top: '92%', left: '62%' },
+    { top: '90%', left: '72%' },
+    { top: '88%', right: '15%' },
+    { top: '93%', right: '8%' },
+    { top: '90%', left: '45%' },
   ];
 
   return (
