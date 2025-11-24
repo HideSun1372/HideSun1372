@@ -41,6 +41,10 @@ export default function Bio() {
     window.open('https://deltarune.com/dogcheck', '_blank');
   };
 
+  const handleGifClick = () => {
+    window.open('https://deltarune.com/d_a_m_n_y_o_u_t_e_n_n_a', '_blank');
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center p-8" data-testid="container-bio">
       <div className="max-w-2xl w-full">
@@ -55,8 +59,9 @@ export default function Bio() {
           <img 
             src={gifImage} 
             alt="character gif" 
-            className="w-16 h-16 object-contain"
+            className="w-16 h-16 object-contain cursor-pointer"
             data-testid="gif-character"
+            onClick={handleGifClick}
           />
         </div>
         <p 
@@ -79,8 +84,9 @@ export default function Bio() {
             <img 
               src={projectGif} 
               alt="project gif" 
-              className="w-16 h-16 object-contain"
+              className="w-16 h-16 object-contain cursor-pointer"
               data-testid="gif-projects"
+              onClick={handleGifClick}
             />
           </div>
           <div className="space-y-6">
@@ -162,8 +168,9 @@ export default function Bio() {
             <img 
               src={contactImage} 
               alt="contact image" 
-              className="w-16 h-16 object-contain"
+              className="w-16 h-16 object-contain cursor-pointer"
               data-testid="img-contact"
+              onClick={handleGifClick}
             />
           </div>
           <div className="space-y-3">
