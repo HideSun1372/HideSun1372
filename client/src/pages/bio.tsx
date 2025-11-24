@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import gifImage from "@assets/egbnebde4z5f1_1764012886964.gif";
 
 export default function Bio() {
   const projects = [
@@ -27,13 +28,21 @@ export default function Bio() {
   return (
     <div className="min-h-screen flex items-center justify-center p-8" data-testid="container-bio">
       <div className="max-w-2xl w-full">
-        <h1 
-          className="text-[20px] font-normal tracking-[-0.01em] leading-none mb-6" 
-          data-testid="text-bio-name"
-          style={{ WebkitFontSmoothing: 'antialiased' }}
-        >
-          Justin Chen
-        </h1>
+        <div className="flex items-center gap-6 mb-6">
+          <h1 
+            className="text-[20px] font-normal tracking-[-0.01em] leading-none" 
+            data-testid="text-bio-name"
+            style={{ WebkitFontSmoothing: 'antialiased' }}
+          >
+            Justin Chen
+          </h1>
+          <img 
+            src={gifImage} 
+            alt="character gif" 
+            className="w-16 h-16 object-contain"
+            data-testid="gif-character"
+          />
+        </div>
         <p 
           className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground mb-12" 
           data-testid="text-bio-description"
