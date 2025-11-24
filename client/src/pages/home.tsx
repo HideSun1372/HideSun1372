@@ -48,7 +48,7 @@ export default function Home() {
   ];
 
   const handleSecretClick = () => {
-    window.open('https://deltarune.com', '_blank');
+    window.open('https://deltarune.com/romb', '_blank');
   };
 
   return (
