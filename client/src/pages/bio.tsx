@@ -1,9 +1,32 @@
 import { Link } from "wouter";
 
 export default function Bio() {
+  const projects = [
+    {
+      name: "Random Color Generator",
+      description: "A website that shows you random colors when you press spacebar"
+    },
+    {
+      name: "Snake Game Clone",
+      description: "Built a simple snake game using JavaScript and canvas"
+    },
+    {
+      name: "Todo List App",
+      description: "My first React project - a basic todo app with local storage"
+    },
+    {
+      name: "Discord Bot",
+      description: "A bot that sends random memes from Reddit"
+    },
+    {
+      name: "Weather Dashboard",
+      description: "Shows the weather using a free API, made it look cool with gradients"
+    }
+  ];
+
   return (
     <div className="min-h-screen flex items-center justify-center p-8" data-testid="container-bio">
-      <div className="max-w-2xl">
+      <div className="max-w-2xl w-full">
         <h1 
           className="text-[20px] font-normal tracking-[-0.01em] leading-none mb-6" 
           data-testid="text-bio-name"
@@ -12,12 +35,41 @@ export default function Bio() {
           Justin Chen
         </h1>
         <p 
-          className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground mb-8" 
+          className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground mb-12" 
           data-testid="text-bio-description"
           style={{ WebkitFontSmoothing: 'antialiased' }}
         >
           Middle school developer which designs random stuff for fun
         </p>
+
+        <div className="mb-12">
+          <h2 
+            className="text-[20px] font-normal tracking-[-0.01em] leading-none mb-6"
+            data-testid="text-projects-heading"
+            style={{ WebkitFontSmoothing: 'antialiased' }}
+          >
+            Projects
+          </h2>
+          <div className="space-y-6">
+            {projects.map((project, index) => (
+              <div key={index} data-testid={`project-${index}`}>
+                <h3 
+                  className="text-[20px] font-normal tracking-[-0.01em] leading-none mb-2"
+                  style={{ WebkitFontSmoothing: 'antialiased' }}
+                >
+                  {project.name}
+                </h3>
+                <p 
+                  className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
+                  style={{ WebkitFontSmoothing: 'antialiased' }}
+                >
+                  {project.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <Link href="/">
           <a 
             className="text-[20px] font-normal tracking-[-0.01em] leading-none text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
