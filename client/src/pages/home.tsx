@@ -5,7 +5,6 @@ export default function Home() {
     { top: '15%', left: '70%' },
     { top: '75%', right: '15%' },
     { top: '80%', left: '60%' },
-    { top: '40%', left: '5%' },
     { top: '50%', right: '8%' },
     { top: '25%', left: '45%' },
     { top: '70%', left: '85%' },
