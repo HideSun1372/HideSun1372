@@ -54,7 +54,7 @@ export default function Home() {
           className="text-[20px] font-normal tracking-[-0.01em] leading-tight text-muted-foreground" 
           data-testid="text-description"
         >
-          Middle school devloper which designs random stuff for fun
+          Middle school developer which designs random stuff for fun
         </p>
       </div>
     </div>
