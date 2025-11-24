@@ -55,6 +55,10 @@ export default function Home() {
     window.open('https://deltarune.com/dess', '_blank');
   };
 
+  const handleWeatherClick = () => {
+    window.open('https://deltarune.com/weather', '_blank');
+  };
+
   return (
     <div className="relative h-screen overflow-hidden" data-testid="container-home">
       {scatteredPositions.map((pos, index) => (
@@ -71,6 +75,19 @@ export default function Home() {
           hi
         </div>
       ))}
+      
+      <div
+        className="absolute text-[20px] font-normal tracking-[-0.01em] leading-none cursor-pointer hover:text-foreground transition-colors text-muted-foreground/40"
+        style={{ 
+          top: '50%',
+          left: '20%',
+          WebkitFontSmoothing: 'antialiased'
+        }}
+        onClick={handleWeatherClick}
+        data-testid="text-weather"
+      >
+        weather
+      </div>
       
       <div className="flex items-center justify-center h-full">
         <h1 
