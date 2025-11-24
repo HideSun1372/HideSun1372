@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import gifImage from "@assets/egbnebde4z5f1_1764012886964.gif";
+import projectGif from "@assets/ch3-spoiler-i-ripped-all-of-this-guys-sprites-and-made-some-v0-olxlbovsfb5f1_1764012956214.gif";
 
 export default function Bio() {
   const projects = [
@@ -52,13 +53,21 @@ export default function Bio() {
         </p>
 
         <div className="mb-12">
-          <h2 
-            className="text-[20px] font-normal tracking-[-0.01em] leading-none mb-6"
-            data-testid="text-projects-heading"
-            style={{ WebkitFontSmoothing: 'antialiased' }}
-          >
-            Projects
-          </h2>
+          <div className="flex items-center gap-6 mb-6">
+            <h2 
+              className="text-[20px] font-normal tracking-[-0.01em] leading-none"
+              data-testid="text-projects-heading"
+              style={{ WebkitFontSmoothing: 'antialiased' }}
+            >
+              Projects
+            </h2>
+            <img 
+              src={projectGif} 
+              alt="project gif" 
+              className="w-16 h-16 object-contain"
+              data-testid="gif-projects"
+            />
+          </div>
           <div className="space-y-6">
             {projects.map((project, index) => (
               <div key={index} data-testid={`project-${index}`}>
