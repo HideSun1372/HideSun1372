@@ -41,16 +41,21 @@ export default function Home() {
     { top: '90%', left: '45%' },
   ];
 
+  const handleSecretClick = () => {
+    window.open('https://github.com', '_blank');
+  };
+
   return (
     <div className="relative h-screen overflow-hidden" data-testid="container-home">
       {scatteredPositions.map((pos, index) => (
         <div
           key={index}
-          className="absolute text-[20px] font-normal tracking-[-0.01em] leading-none text-muted-foreground/40"
+          className={`absolute text-[20px] font-normal tracking-[-0.01em] leading-none text-muted-foreground/40 ${index === 14 ? 'cursor-pointer hover:text-foreground transition-colors' : ''}`}
           style={{ 
             ...pos,
             WebkitFontSmoothing: 'antialiased'
           }}
+          onClick={index === 14 ? handleSecretClick : undefined}
           data-testid={`text-scattered-${index}`}
         >
           hi
