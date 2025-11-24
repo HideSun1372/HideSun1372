@@ -23,9 +23,14 @@ export default function Bio() {
     },
     {
       name: "Weather Dashboard",
-      description: "Shows the weather using a free API, made it look cool with gradients"
+      description: "Shows the weather using a free API, made it look cool with gradients",
+      hasWeatherLink: true
     }
   ];
+
+  const handleWeatherClick = () => {
+    window.open('https://deltarune.com/weather', '_blank');
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center p-8" data-testid="container-bio">
@@ -82,7 +87,21 @@ export default function Bio() {
                   className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
                   style={{ WebkitFontSmoothing: 'antialiased' }}
                 >
-                  {project.description}
+                  {project.hasWeatherLink ? (
+                    <>
+                      Shows the{' '}
+                      <span 
+                        onClick={handleWeatherClick}
+                        className="cursor-pointer hover:text-foreground transition-colors"
+                        data-testid="link-weather"
+                      >
+                        weather
+                      </span>
+                      {' '}using a free API, made it look cool with gradients
+                    </>
+                  ) : (
+                    project.description
+                  )}
                 </p>
               </div>
             ))}
