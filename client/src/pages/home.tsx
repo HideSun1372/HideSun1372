@@ -10,6 +10,20 @@ export default function Home() {
     { top: '68%', left: '75%' },
     { top: '18%', left: '38%' },
     { top: '72%', right: '25%' },
+    { top: '5%', left: '45%' },
+    { top: '10%', right: '5%' },
+    { top: '25%', left: '15%' },
+    { top: '28%', right: '30%' },
+    { top: '32%', left: '70%' },
+    { top: '42%', left: '25%' },
+    { top: '45%', right: '45%' },
+    { top: '55%', left: '5%' },
+    { top: '58%', right: '35%' },
+    { top: '75%', left: '90%' },
+    { top: '78%', right: '8%' },
+    { top: '82%', left: '55%' },
+    { top: '6%', left: '28%' },
+    { top: '20%', left: '55%' },
   ];
 
   return (
