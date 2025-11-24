@@ -25,6 +25,10 @@ export default function Bio() {
       name: "Weather Dashboard",
       description: "Shows the weather using a free API, made it look cool with gradients",
       hasWeatherLink: true
+    },
+    {
+      name: "Checks",
+      description: "Allows you to check random items, such as dogs."
     }
   ];
 
