@@ -39,6 +39,12 @@ export default function Home() {
     { top: '88%', right: '15%' },
     { top: '93%', right: '8%' },
     { top: '90%', left: '45%' },
+    { top: '82%', left: '18%' },
+    { top: '85%', left: '25%' },
+    { top: '87%', left: '32%' },
+    { top: '83%', left: '12%' },
+    { top: '92%', left: '28%' },
+    { top: '88%', left: '38%' },
   ];
 
   const handleSecretClick = () => {
@@ -70,24 +76,6 @@ export default function Home() {
         >
           hi
         </h1>
-      </div>
-
-      <div 
-        className="absolute bottom-[15%] left-[20%]"
-        style={{ WebkitFontSmoothing: 'antialiased' }}
-      >
-        <h2 
-          className="text-[20px] font-normal tracking-[-0.01em] leading-none mb-2" 
-          data-testid="text-name"
-        >
-          Justin Chen
-        </h2>
-        <p 
-          className="text-[20px] font-normal tracking-[-0.01em] leading-tight text-muted-foreground" 
-          data-testid="text-description"
-        >
-          Middle school developer which designs random stuff for fun
-        </p>
       </div>
     </div>
   );
