@@ -21,7 +21,6 @@ export default function Home() {
     { top: '58%', right: '35%' },
     { top: '75%', left: '90%' },
     { top: '78%', right: '8%' },
-    { top: '82%', left: '55%' },
     { top: '6%', left: '28%' },
     { top: '20%', left: '55%' },
     { top: '70%', left: '8%' },
