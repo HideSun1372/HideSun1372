@@ -81,7 +81,20 @@ export default function Bio() {
                   className="text-[20px] font-normal tracking-[-0.01em] leading-none mb-2"
                   style={{ WebkitFontSmoothing: 'antialiased' }}
                 >
-                  {project.name}
+                  {project.hasWeatherLink ? (
+                    <>
+                      <span 
+                        onClick={handleWeatherClick}
+                        className="cursor-pointer hover:text-foreground transition-colors"
+                        data-testid="link-weather-title"
+                      >
+                        Weather
+                      </span>
+                      {' '}Dashboard
+                    </>
+                  ) : (
+                    project.name
+                  )}
                 </h3>
                 <p 
                   className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
@@ -93,7 +106,7 @@ export default function Bio() {
                       <span 
                         onClick={handleWeatherClick}
                         className="cursor-pointer hover:text-foreground transition-colors"
-                        data-testid="link-weather"
+                        data-testid="link-weather-description"
                       >
                         weather
                       </span>
