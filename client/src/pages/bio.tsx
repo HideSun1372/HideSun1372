@@ -6,40 +6,15 @@ import contactImage from "@assets/273063-253_1764013414243.gif";
 export default function Bio() {
   const projects = [
     {
-      name: "Random Color Generator",
-      description: "A website that shows you random colors when you press spacebar"
+      name: "ZETATRAVELER",
+      description: "A simple RPG game inspired by Earthbound, Undertale, etc."
     },
     {
-      name: "Snake Game Clone",
-      description: "Built a simple snake game using JavaScript and canvas"
-    },
-    {
-      name: "Todo List App",
-      description: "My first React project - a basic todo app with local storage"
-    },
-    {
-      name: "Discord Bot",
-      description: "A bot that sends random memes from Reddit"
-    },
-    {
-      name: "Weather Dashboard",
-      description: "Shows the weather using a free API, made it look cool with gradients",
-      hasWeatherLink: true
-    },
-    {
-      name: "Checks",
-      description: "Allows you to check random items, such as dogs.",
-      hasCheckLink: true
+      name: "Debation",
+      description: "A debate app consisting of learning features, practicing features and a lot more."
     }
   ];
 
-  const handleWeatherClick = () => {
-    window.open('https://deltarune.com/weather', '_blank');
-  };
-
-  const handleDogCheckClick = () => {
-    window.open('https://deltarune.com/dogcheck', '_blank');
-  };
 
   const handleGifClick = () => {
     window.open('https://deltarune.com/d_a_m_n_y_o_u_t_e_n_n_a', '_blank');
@@ -49,23 +24,23 @@ export default function Bio() {
     <div className="min-h-screen flex items-center justify-center p-8" data-testid="container-bio">
       <div className="max-w-2xl w-full">
         <div className="flex items-center gap-6 mb-6">
-          <h1 
-            className="text-[20px] font-normal tracking-[-0.01em] leading-none" 
+          <h1
+            className="text-[20px] font-normal tracking-[-0.01em] leading-none"
             data-testid="text-bio-name"
             style={{ WebkitFontSmoothing: 'antialiased' }}
           >
             Justin Chen
           </h1>
-          <img 
-            src={gifImage} 
-            alt="character gif" 
+          <img
+            src={gifImage}
+            alt="character gif"
             className="w-16 h-16 object-contain cursor-pointer"
             data-testid="gif-character"
             onClick={handleGifClick}
           />
         </div>
-        <p 
-          className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground mb-12" 
+        <p
+          className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground mb-12"
           data-testid="text-bio-description"
           style={{ WebkitFontSmoothing: 'antialiased' }}
         >
@@ -74,16 +49,16 @@ export default function Bio() {
 
         <div className="mb-12">
           <div className="flex items-center gap-6 mb-6">
-            <h2 
+            <h2
               className="text-[20px] font-normal tracking-[-0.01em] leading-none"
               data-testid="text-projects-heading"
               style={{ WebkitFontSmoothing: 'antialiased' }}
             >
               Projects
             </h2>
-            <img 
-              src={projectGif} 
-              alt="project gif" 
+            <img
+              src={projectGif}
+              alt="project gif"
               className="w-16 h-16 object-contain cursor-pointer"
               data-testid="gif-projects"
               onClick={handleGifClick}
@@ -92,64 +67,17 @@ export default function Bio() {
           <div className="space-y-6">
             {projects.map((project, index) => (
               <div key={index} data-testid={`project-${index}`}>
-                <h3 
+                <h3
                   className="text-[20px] font-normal tracking-[-0.01em] leading-none mb-2"
                   style={{ WebkitFontSmoothing: 'antialiased' }}
                 >
-                  {project.hasWeatherLink ? (
-                    <>
-                      <span 
-                        onClick={handleWeatherClick}
-                        className="cursor-pointer hover:text-foreground transition-colors"
-                        data-testid="link-weather-title"
-                      >
-                        Weather
-                      </span>
-                      {' '}Dashboard
-                    </>
-                  ) : (
-                    project.name
-                  )}
+                  {project.name}
                 </h3>
-                <p 
+                <p
                   className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
                   style={{ WebkitFontSmoothing: 'antialiased' }}
                 >
-                  {project.hasWeatherLink ? (
-                    <>
-                      Shows the{' '}
-                      <span 
-                        onClick={handleWeatherClick}
-                        className="cursor-pointer hover:text-foreground transition-colors"
-                        data-testid="link-weather-description"
-                      >
-                        weather
-                      </span>
-                      {' '}using a free API, made it look cool with gradients
-                    </>
-                  ) : project.hasCheckLink ? (
-                    <>
-                      Allows you to{' '}
-                      <span 
-                        onClick={handleDogCheckClick}
-                        className="cursor-pointer hover:text-foreground transition-colors"
-                        data-testid="link-check"
-                      >
-                        check
-                      </span>
-                      {' '}random items, such as{' '}
-                      <span 
-                        onClick={handleDogCheckClick}
-                        className="cursor-pointer hover:text-foreground transition-colors"
-                        data-testid="link-dogs"
-                      >
-                        dogs
-                      </span>
-                      .
-                    </>
-                  ) : (
-                    project.description
-                  )}
+                  {project.description}
                 </p>
               </div>
             ))}
@@ -158,48 +86,48 @@ export default function Bio() {
 
         <div className="mb-12">
           <div className="flex items-center gap-6 mb-6">
-            <h2 
+            <h2
               className="text-[20px] font-normal tracking-[-0.01em] leading-none"
               data-testid="text-contact-heading"
               style={{ WebkitFontSmoothing: 'antialiased' }}
             >
               Contact Me
             </h2>
-            <img 
-              src={contactImage} 
-              alt="contact image" 
+            <img
+              src={contactImage}
+              alt="contact image"
               className="w-16 h-16 object-contain cursor-pointer"
               data-testid="img-contact"
               onClick={handleGifClick}
             />
           </div>
           <div className="space-y-3">
-            <p 
+            <p
               className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
               data-testid="text-email"
               style={{ WebkitFontSmoothing: 'antialiased' }}
             >
-              Email: justin.chen@example.com
+              Email: siqichen0802@gmail.com
             </p>
-            <p 
+            <p
               className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
               data-testid="text-github"
               style={{ WebkitFontSmoothing: 'antialiased' }}
             >
-              GitHub: github.com/justinchen
+              GitHub: github.com/HideSun1372
             </p>
-            <p 
+            <p
               className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
               data-testid="text-discord"
               style={{ WebkitFontSmoothing: 'antialiased' }}
             >
-              Discord: justin#1234
+              Discord: hidesun1372
             </p>
           </div>
         </div>
 
         <Link href="/">
-          <a 
+          <a
             className="text-[20px] font-normal tracking-[-0.01em] leading-none text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
             data-testid="link-back-home"
             style={{ WebkitFontSmoothing: 'antialiased' }}
