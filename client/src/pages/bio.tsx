@@ -7,11 +7,13 @@ export default function Bio() {
   const projects = [
     {
       name: "ZETATRAVELER",
-      description: "A simple RPG game inspired by Earthbound, Undertale, etc."
+      description: "A simple RPG game inspired by Earthbound, Undertale, etc.",
+      url: "https://zetatraveler.vercel.app"
     },
     {
       name: "Debation",
-      description: "A debate app consisting of learning features, practicing features and a lot more."
+      description: "A debate app consisting of learning features, practicing features and a lot more.",
+      url: "https://debation.vercel.app"
     }
   ];
 
@@ -71,7 +73,14 @@ export default function Bio() {
                   className="text-[20px] font-normal tracking-[-0.01em] leading-none mb-2"
                   style={{ WebkitFontSmoothing: 'antialiased' }}
                 >
-                  {project.name}
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    {project.name}
+                  </a>
                 </h3>
                 <p
                   className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
