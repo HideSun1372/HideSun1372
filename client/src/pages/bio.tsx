@@ -46,7 +46,7 @@ export default function Bio() {
           data-testid="text-bio-description"
           style={{ WebkitFontSmoothing: 'antialiased' }}
         >
-          Middle school developer which designs random stuff for fun
+          Middle school developer who designs random stuff for fun
         </p>
 
         <div className="mb-12">
