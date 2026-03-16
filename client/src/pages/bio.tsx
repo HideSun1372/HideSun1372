@@ -31,6 +31,25 @@ export default function Bio() {
   return (
     <div className="min-h-screen flex items-center justify-center p-8" data-testid="container-bio">
       <div className="max-w-2xl w-full">
+        <div
+          className="mb-8 p-4 rounded-lg border border-border bg-muted/30"
+          data-testid="section-news"
+        >
+          <h2
+            className="text-[16px] font-medium tracking-[-0.01em] text-muted-foreground mb-2"
+            style={{ WebkitFontSmoothing: 'antialiased' }}
+          >
+            News
+          </h2>
+          <p
+            className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed"
+            data-testid="text-news"
+            style={{ WebkitFontSmoothing: 'antialiased' }}
+          >
+            My projects have now been made open source on GitHub! You should really check it out!
+          </p>
+        </div>
+
         <div className="flex items-center gap-6 mb-6">
           <h1
             className="text-[20px] font-normal tracking-[-0.01em] leading-none"
