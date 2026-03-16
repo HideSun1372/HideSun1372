@@ -113,13 +113,6 @@ export default function Bio() {
           <div className="space-y-3">
             <p
               className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
-              data-testid="text-email"
-              style={{ WebkitFontSmoothing: 'antialiased' }}
-            >
-              Email: siqichen0802@gmail.com
-            </p>
-            <p
-              className="text-[20px] font-normal tracking-[-0.01em] leading-relaxed text-muted-foreground"
               data-testid="text-github"
               style={{ WebkitFontSmoothing: 'antialiased' }}
             >
