@@ -20,6 +20,16 @@ export default function Bio() {
       name: "Debation",
       description: "A debate app consisting of learning features, practicing features and a lot more.",
       url: "https://debation.vercel.app"
+    },
+    {
+      name: "DeltaSave",
+      description: "A Minecraft Java Plugin that implements a Deltarune-style save system inside Minecraft.",
+      url: "https://github.com/HideSun1372/DeltaSave"
+    },
+    {
+      name: "Faint Aura - Development Experiment",
+      description: "RPG Game - Final project for the Programming & Application Creators curriculum.",
+      url: "https://github.com/HideSun1372/FADE"
     }
   ];
 
