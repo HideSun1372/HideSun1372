@@ -24,12 +24,12 @@ export default function Bio() {
     {
       name: "DeltaSave",
       description: "A Minecraft Java Plugin that implements a Deltarune-style save system inside Minecraft.",
-      url: "https://github.com/HideSun1372/DeltaSave"
+      url: "https://modrinth.com/plugin/deltasave"
     },
     {
       name: "Faint Aura - Development Experiment",
       description: "RPG Game - Final project for the Programming & Application Creators curriculum.",
-      url: "https://github.com/HideSun1372/FADE"
+      url: "https://faint-aura.vercel.app"
     }
   ];
 
