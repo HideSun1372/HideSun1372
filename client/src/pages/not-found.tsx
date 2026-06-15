@@ -9,11 +9,11 @@ export default function NotFound() {
   const [pick] = useState(() => options[Math.floor(Math.random() * options.length)]);
 
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-black gap-4">
-      <img src={pick.src} alt="404 Not Found" className="max-w-2xl w-full" />
-      <p className="text-gray-400 text-sm">
+    <div className="page-404">
+      <img src={pick.src} alt="404 Not Found" />
+      <p>
         Image from:{" "}
-        <a href={pick.href} target="_blank" rel="noopener noreferrer" className="underline hover:text-white">
+        <a href={pick.href} target="_blank" rel="noopener noreferrer">
           {pick.label}
         </a>
       </p>
