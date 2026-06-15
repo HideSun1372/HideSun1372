@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "wouter";
-import gifImage from "@assets/egbnebde4z5f1_1764012886964.gif";
-import projectGif from "@assets/ch3-spoiler-i-ripped-all-of-this-guys-sprites-and-made-some-v0-olxlbovsfb5f1_1764012956214.gif";
-import contactImage from "@assets/273063-253_1764013414243.gif";
+import gifImage from "@assets/character.gif";
+import projectGif from "@assets/character2.gif";
+import contactImage from "@assets/character3.gif";
 
 const projects = [
   {
