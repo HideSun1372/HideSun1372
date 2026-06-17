@@ -1,4 +1,14 @@
-# Hello there!
+# Hello there! 👋
+
+I'm a student developer interested in:
+
+* Full-stack web development
+* Linux and cybersecurity
+* CUDA programming
+* Large Language Models (LLMs)
+* Machine learning and AI
+
+Currently learning Linux, CUDA, and how modern AI systems work.
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=HideSun1372&hide=&show=reviews&show_icons=true&theme=tokyonight&custom_title=Statistics&rank_icon=github" width="48%" />
