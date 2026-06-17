@@ -1,8 +1,9 @@
 # Hello there!
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=HideSun1372&layout=compact&theme=tokyonight)
-
-![Statistics](https://github-readme-stats.vercel.app/api?username=HideSun1372&hide=&show=reviews&show_icons=true&theme=tokyonight&custom_title=Statistics&rank_icon=github)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=HideSun1372&hide=&show=reviews&show_icons=true&theme=tokyonight&custom_title=Statistics&rank_icon=github" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HideSun1372&layout=compact&theme=tokyonight" width="48%" />
+</p>
 
 ## **My specifications**
 ### Frontend Design:
@@ -41,10 +42,9 @@
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)
 
 ## **Laptop specifications**
-CPU: Intel Core Ultra 5 225H (14C/14T)
-
-RAM: 16 gigabytes of DDR5
-
-GPU: NVIDIA GeForce RTX 5050 (8 gigabytes GDDR7 VRAM)
-
-Storage: 1 terabyte NVMe SSD storage (PCIe Gen 4)
+| Component | Hardware Specification |
+| :--- | :--- |
+| **CPU** | Intel Core Ultra 5 225H (14C / 14T) |
+| **RAM** | 16 GB DDR5 |
+| **GPU** | NVIDIA GeForce RTX 5050 (8 GB GDDR7 VRAM) |
+| **Storage** | 1 TB NVMe SSD (PCIe Gen 4) |
