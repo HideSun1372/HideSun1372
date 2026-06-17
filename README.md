@@ -4,7 +4,7 @@
 
 ![Statistics](https://github-readme-stats.vercel.app/api?username=HideSun1372&hide=&show=reviews&show_icons=true&theme=tokyonight&custom_title=Statistics&rank_icon=github)
 
-## **My speculations**
+## **My specifications**
 ### Frontend Design:
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![CSS](https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white)
@@ -40,7 +40,7 @@
 ### Assistants:
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)
 
-## **Laptop speculations**
+## **Laptop specifications**
 CPU: Intel Core Ultra 5 225H (14C/14T)
 
 RAM: 16 gigabytes of DDR5
