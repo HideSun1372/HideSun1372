@@ -43,7 +43,7 @@ export default function Bio() {
 
         <div className="news-block" data-testid="section-news">
           <p className="news-label">News</p>
-          <p data-testid="text-news">DELTARUNE June 24th!</p>
+          <p data-testid="text-news">Not too important... Not too unimportant.</p>
         </div>
 
         <div className="bio-row">
